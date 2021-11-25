@@ -78,7 +78,7 @@ func NewIndicesMappings(logger log.Logger, client *http.Client, url *url.URL) *I
 					defaultIndicesMappingsLabels, nil,
 				),
 				Value: func(indexMapping IndexMapping) float64 {
-					return countFieldsRecursive(indexMapping.Mappings.Properties, 0)
+					return countFieldsRecursive(indexMapping.Mappings, 0)
 				},
 			},
 		},

@@ -18,12 +18,7 @@ type IndicesMappingsResponse map[string]IndexMapping
 
 // IndexMapping defines the struct of the tree for the mappings of each index
 type IndexMapping struct {
-	Mappings IndexMappings `json:"mappings"`
-}
-
-// IndexMappings defines all index mappings
-type IndexMappings struct {
-	Properties IndexMappingProperties `json:"properties"`
+	Mappings IndexMappingProperties `json:"mappings"`
 }
 
 // IndexMappingProperties defines all the properties of the current mapping
